@@ -1,5 +1,5 @@
-import { Landing } from "../components/Landing";
+import { PhotoApp } from "../components/PhotoApp";
 
-export default function HomePage() {
-  return <Landing />;
+export default function Home() {
+  return <PhotoApp />;
 }

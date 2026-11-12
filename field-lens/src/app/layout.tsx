@@ -1,34 +1,28 @@
 import type { Metadata, Viewport } from "next";
-import { Fraunces, Outfit } from "next/font/google";
+import { Figtree, Syne } from "next/font/google";
 import "./globals.css";
 
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
+const syne = Syne({
+  variable: "--font-syne",
   subsets: ["latin"],
-  axes: ["SOFT", "WONK", "opsz"],
+  weight: ["600", "700", "800"],
 });
 
-const outfit = Outfit({
-  variable: "--font-outfit",
+const figtree = Figtree({
+  variable: "--font-figtree",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Field Lens — Traducción en vivo ES ↔ EN",
+  title: "Field Lens — Photos from the field",
   description:
-    "App para hispanohablantes: traduce conversaciones en tiempo real con personas de habla inglesa y te dice exactamente qué responder.",
+    "A calm photo library for field work and outdoor rolls. Browse sample frames or add your own photos.",
   applicationName: "Field Lens",
-  keywords: [
-    "traducción en vivo",
-    "español inglés",
-    "intérprete",
-    "qué decir en inglés",
-    "Field Lens",
-  ],
+  keywords: ["Field Lens", "photos", "field photography", "gallery", "photo library"],
 };
 
 export const viewport: Viewport = {
-  themeColor: "#071612",
+  themeColor: "#12100e",
   width: "device-width",
   initialScale: 1,
 };
@@ -36,8 +30,8 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
-      lang="es"
-      className={`${fraunces.variable} ${outfit.variable} h-full antialiased`}
+      lang="en"
+      className={`${syne.variable} ${figtree.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
