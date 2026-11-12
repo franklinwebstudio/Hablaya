@@ -345,9 +345,11 @@ export function buildSuggestions(englishText: string): Suggestion[] {
 export async function buildSmartSuggestions(
   englishText: string,
   history: Array<{ role: string; text: string }> = [],
+  options: { allowPaid?: boolean } = {},
 ): Promise<{ suggestions: Suggestion[]; source: "live" | "sample" }> {
   const apiKey = process.env.OPENAI_API_KEY?.trim();
-  if (!apiKey || !englishText.trim()) {
+  // Paid OpenAI calls require a verified signed-in caller (allowPaid).
+  if (!options.allowPaid || !apiKey || !englishText.trim()) {
     return { suggestions: buildSuggestions(englishText), source: "sample" };
   }
 
