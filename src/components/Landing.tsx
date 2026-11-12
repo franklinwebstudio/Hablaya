@@ -1,10 +1,6 @@
-"use client";
+import Link from "next/link";
 
-type Props = {
-  onStart: () => void;
-};
-
-export function Landing({ onStart }: Props) {
+export function Landing() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-atmosphere text-paper">
       <div className="bg-grain absolute inset-0" aria-hidden />
@@ -30,13 +26,12 @@ export function Landing({ onStart }: Props) {
               exactamente qué decir, en español y en inglés.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
-              <button
-                type="button"
-                onClick={onStart}
+              <Link
+                href="/conversar"
                 className="rounded-full bg-lime px-7 py-3.5 text-base font-semibold text-ink transition hover:bg-lime-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime"
               >
                 Empezar conversación
-              </button>
+              </Link>
               <span className="text-sm text-fog">Micrófono + voz en vivo</span>
             </div>
           </div>

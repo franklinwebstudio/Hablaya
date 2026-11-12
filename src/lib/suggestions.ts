@@ -321,17 +321,25 @@ export function buildSuggestions(englishText: string): Suggestion[] {
     rule.patterns.some((pattern) => pattern.test(text)),
   );
 
-  const picked = (matched.length > 0 ? matched : RULES.slice(-2))
+  const picked = (matched.length > 0 ? matched : [RULES[RULES.length - 1]!])
     .flatMap((rule) =>
       rule.replies.map((reply, index) => ({
         id: `${rule.intent}-${index}-${Math.random().toString(36).slice(2, 7)}`,
         intent: rule.intent,
         ...reply,
       })),
-    )
-    .slice(0, 3);
+    );
 
-  return picked.length > 0 ? picked : FALLBACK;
+  const unique: Suggestion[] = [];
+  for (const item of [...picked, ...FALLBACK]) {
+    if (unique.some((existing) => existing.sayInEnglish === item.sayInEnglish)) {
+      continue;
+    }
+    unique.push(item);
+    if (unique.length === 3) break;
+  }
+
+  return unique.length > 0 ? unique : FALLBACK;
 }
 
 export async function buildSmartSuggestions(
