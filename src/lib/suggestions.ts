@@ -382,7 +382,7 @@ export async function buildSmartSuggestions(
           {
             role: "system",
             content:
-              "You are Field Lens, a calm bilingual conversation coach for Spanish speakers.",
+              "You are HablaYa, a calm bilingual conversation coach for Spanish speakers.",
           },
           { role: "user", content: prompt },
         ],
