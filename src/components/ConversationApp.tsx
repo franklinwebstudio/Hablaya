@@ -95,7 +95,7 @@ export function ConversationApp({ onBack }: Props) {
           if (suggest.source === "sample") {
             setDataNote((prev) =>
               prev ??
-                "Sugerencias listas con el coach integrado. Conecta OPENAI_API_KEY para respuestas más inteligentes.",
+                "Sugerencias del coach integrado. Las sugerencias con IA requieren iniciar sesión en una app privada o de equipo.",
             );
           }
         } else {
