@@ -1,12 +1,6 @@
 # Field Lens
 
-Live ES ↔ EN conversation coach for Spanish speakers: translate in real time and get exactly what to say.
-
-## What it does
-
-- **They speak English**: listens, translates to Spanish, and proposes 3 ready replies.
-- **I speak Spanish**: converts your phrase to English and can speak it aloud.
-- **What to say** coach with the English line, Spanish meaning, and why it fits.
+A calm photo library for field work and outdoor rolls. Browse sample frames or add your own photos on this device.
 
 ## Run locally
 
@@ -15,8 +9,9 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:3000`. Speech recognition works best in Chrome or Edge and needs microphone permission.
+Open `http://localhost:3000`.
 
-## Optional secrets
+## Notes
 
-- `OPENAI_API_KEY` — improves “What to say” suggestions. Without it, Field Lens uses the built-in coach and MyMemory for translation.
+- Sample photos load from Unsplash for demo.
+- Photos you add stay in the browser session (not uploaded to a server).
