@@ -8,7 +8,7 @@ export function Landing() {
       <div className="relative z-10 mx-auto flex min-h-screen max-w-6xl flex-col px-5 pb-10 pt-6 sm:px-8">
         <header className="animate-rise flex items-center justify-between">
           <div className="font-display text-2xl tracking-tight text-lime sm:text-3xl">
-            HablaYa
+            Field Lens
           </div>
           <p className="text-sm text-fog">Traducción en vivo · ES ↔ EN</p>
         </header>
@@ -19,7 +19,7 @@ export function Landing() {
               Para hispanohablantes
             </p>
             <h1 className="font-display text-[clamp(3rem,9vw,5.6rem)] leading-[0.92] tracking-[-0.03em] text-paper">
-              HablaYa
+              Field Lens
             </h1>
             <p className="mt-5 max-w-md text-lg leading-relaxed text-mist/90 sm:text-xl">
               Traduce en tiempo real con personas de habla inglesa y recibe

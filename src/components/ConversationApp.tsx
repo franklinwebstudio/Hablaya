@@ -184,9 +184,9 @@ export function ConversationApp({ onBack }: Props) {
             }}
             className="rounded-full px-3 py-2 text-sm text-fog transition hover:text-paper"
           >
-            ← HablaYa
+            ← Field Lens
           </button>
-          <div className="font-display text-xl text-lime sm:text-2xl">HablaYa</div>
+          <div className="font-display text-xl text-lime sm:text-2xl">Field Lens</div>
           <button
             type="button"
             onClick={clearChat}
@@ -219,8 +219,8 @@ export function ConversationApp({ onBack }: Props) {
 
             <p className="mt-4 text-sm text-fog">
               {mode === "listen"
-                ? "Acerca el micrófono a la persona que habla inglés. HablaYa traduce al instante y te sugiere qué responder."
-                : "Habla en español. HablaYa te dice exactamente qué decir en inglés y lo puede pronunciar por ti."}
+                ? "Acerca el micrófono a la persona que habla inglés. Field Lens traduce al instante y te sugiere qué responder."
+                : "Habla en español. Field Lens te dice exactamente qué decir en inglés y lo puede pronunciar por ti."}
             </p>
 
             <div className="mt-5 flex flex-1 flex-col gap-3 overflow-y-auto pr-1">
@@ -345,7 +345,7 @@ export function ConversationApp({ onBack }: Props) {
               <p className="mt-auto pt-4 text-xs leading-relaxed text-fog">{dataNote}</p>
             ) : (
               <p className="mt-auto pt-4 text-xs leading-relaxed text-fog">
-                Tip: en modo “Ellos hablan inglés”, deja que HablaYa escuche y luego elige
+                Tip: en modo “Ellos hablan inglés”, deja que Field Lens escuche y luego elige
                 una respuesta. En modo “Yo hablo español”, di lo que quieres y recibe la
                 frase en inglés.
               </p>

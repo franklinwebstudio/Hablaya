@@ -1,22 +1,22 @@
-# HablaYa
+# Field Lens
 
-App para hispanohablantes que traduce conversaciones en vivo con personas de habla inglesa y sugiere exactamente qué decir.
+Live ES ↔ EN conversation coach for Spanish speakers: translate in real time and get exactly what to say.
 
-## Qué hace
+## What it does
 
-- **Ellos hablan inglés**: escucha, traduce al español y propone 3 respuestas listas.
-- **Yo hablo español**: convierte tu frase al inglés y la puede pronunciar en voz alta.
-- Coach **Qué decir** con la frase en inglés, su significado en español y el motivo.
+- **They speak English**: listens, translates to Spanish, and proposes 3 ready replies.
+- **I speak Spanish**: converts your phrase to English and can speak it aloud.
+- **What to say** coach with the English line, Spanish meaning, and why it fits.
 
-## Cómo correrlo
+## Run locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-Abre `http://localhost:3000`. El reconocimiento de voz funciona mejor en Chrome o Edge (escritorio o móvil) y pide permiso de micrófono.
+Open `http://localhost:3000`. Speech recognition works best in Chrome or Edge and needs microphone permission.
 
-## Secretos opcionales
+## Optional secrets
 
-- `OPENAI_API_KEY` — mejora las sugerencias de “Qué decir”. Sin ella, HablaYa usa el coach integrado y MyMemory para traducir.
+- `OPENAI_API_KEY` — improves “What to say” suggestions. Without it, Field Lens uses the built-in coach and MyMemory for translation.

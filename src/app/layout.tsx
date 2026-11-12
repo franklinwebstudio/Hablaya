@@ -14,16 +14,16 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "HablaYa — Traducción en vivo ES ↔ EN",
+  title: "Field Lens — Traducción en vivo ES ↔ EN",
   description:
     "App para hispanohablantes: traduce conversaciones en tiempo real con personas de habla inglesa y te dice exactamente qué responder.",
-  applicationName: "HablaYa",
+  applicationName: "Field Lens",
   keywords: [
     "traducción en vivo",
     "español inglés",
     "intérprete",
     "qué decir en inglés",
-    "HablaYa",
+    "Field Lens",
   ],
 };
 
